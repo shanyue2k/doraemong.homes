@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 - 哆啦A梦网络加速器</title>
+  <style>
+    :root {
+      --doraemon-blue: #0096e6;
+      --doraemon-blue-dark: #0077b6;
+      --doraemon-blue-light: #e1f5fe;
+      --bell-yellow: #ffd21e;
+      --bell-yellow-hover: #ffca00;
+      --collar-red: #ff4757;
+      --dark-line: #18191f;
+      --bg-cream: #faf7ee;
+      --border-thick: 3px solid var(--dark-line);
+      --border-medium: 2px solid var(--dark-line);
+      --shadow-solid: 4px 4px 0px var(--dark-line);
+      --shadow-solid-lg: 6px 6px 0px var(--dark-line);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg-cream);
+      background-image: radial-gradient(var(--dark-line) 0.75px, transparent 0.75px);
+      background-size: 20px 20px;
+      color: #18191f;
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    .site-nav {
+      background: #ffffff;
+      border-bottom: var(--border-thick);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--doraemon-blue);
+    }
+
+    .logo-bell {
+      width: 34px;
+      height: 34px;
+      background: var(--bell-yellow);
+      border: var(--border-medium);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 2px 2px 0px var(--dark-line);
+    }
+
+    .comic-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 800;
+      border: var(--border-thick);
+      border-radius: var(--radius-md);
+      background: var(--bell-yellow);
+      color: var(--dark-line);
+      box-shadow: var(--shadow-solid);
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .comic-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-solid-lg);
+    }
+
+    .page-main {
+      padding: 50px 0 70px;
+    }
+
+    .comic-box {
+      background: #ffffff;
+      border: var(--border-thick);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-solid-lg);
+      margin-bottom: 30px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: var(--border-thick);
+      padding-bottom: 16px;
+    }
+
+    .info-card {
+      background: var(--doraemon-blue-light);
+      border: var(--border-medium);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-solid);
+    }
+
+    .info-card-title {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      color: var(--dark-line);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .node-tags-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .node-tag-item {
+      background: #ffffff;
+      border: var(--border-medium);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 2px 2px 0px var(--dark-line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-footer {
+      background: #ffffff;
+      border-top: var(--border-thick);
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      list-style: none;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-link {
+      font-size: 15px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border: var(--border-medium);
+      border-radius: var(--radius-sm);
+      background: var(--bg-cream);
+      box-shadow: 2px 2px 0px var(--dark-line);
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: #666;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .comic-box { padding: 24px 18px; }
+      .page-title { font-size: 28px; }
+      .node-tags-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-wrap">
+      <a href="index.html" class="site-logo">
+        <div class="logo-bell">🔔</div>
+        <span>哆啦A梦</span>
+      </a>
+      <a href="https://ongkahheng0.flashleapaff.com/#?code=Wx6Ins9f" class="comic-btn" rel="nofollow" target="_blank">
+        🚀 立即注册
+      </a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <div class="comic-box">
+        <h1 class="page-title">
+          <span>📖</span>
+          <span>关于我们</span>
+        </h1>
+
+        <!-- 品牌介绍 -->
+        <div class="info-card" style="background: #fffdf5;">
+          <h2 class="info-card-title">
+            <span>🏷️</span>
+            <span>品牌介绍</span>
+          </h2>
+          <p>
+            <strong>哆啦A梦网络加速器</strong>创立于 2023 年，灵感源自我们童年时期对“任意门”的无限向往——不受时空拘束，推开门便可抵达世界任何一个角落。
+            在当今数字时代，信息与知识的自由流动是推动创新与进步的核心力量。我们致力于打破地理网络边界与延迟瓶颈，让每一位研发工程师、跨国商务人士、留学生以及数字游民，都能以最纯粹、最极速的方式连接全球网络。
+          </p>
+        </div>
+
+        <!-- 服务理念 -->
+        <div class="info-card" style="background: #f0fdf4;">
+          <h2 class="info-card-title">
+            <span>💡</span>
+            <span>服务理念</span>
+          </h2>
+          <p>
+            我们的核心服务理念是：<strong>极速可靠、自由开放、绝对隐私、用户至上</strong>。
+          </p>
+          <ul style="padding-left: 20px; margin-top: 10px;">
+            <li><strong>追求极致性能：</strong>拒绝超卖与劣质骨干，只采用高质量企业级 IPLC/IEPL 国际专线。</li>
+            <li><strong>隐私防御优先：</strong>视用户的网络隐私与数据安全为第一生命线，坚决落实纯内存无盘架构。</li>
+            <li><strong>透明简单交互：</strong>消除繁琐的专业网络配置门槛，提供一键直连、傻瓜式智能分流体验。</li>
+          </ul>
+        </div>
+
+        <!-- 节点覆盖 -->
+        <div class="info-card" style="background: #eef2ff;">
+          <h2 class="info-card-title">
+            <span>🌐</span>
+            <span>全球节点覆盖</span>
+          </h2>
+          <p>
+            哆啦A梦在全球主要网络枢纽部署了 50+ 个高性能物理机房与 BGP 智能多线出口。所有节点均配备万兆网络端口与 DDoS 硬件级流量清洗：
+          </p>
+          <div class="node-tags-grid">
+            <div class="node-tag-item"><span>🇭🇰 中国香港 BGP 专线</span><span style="color:#10ac84;">10-25ms</span></div>
+            <div class="node-tag-item"><span>🇯🇵 日本东京 Equinix 专线</span><span style="color:#10ac84;">30-45ms</span></div>
+            <div class="node-tag-item"><span>🇸🇬 新加坡 Singtel 专线</span><span style="color:#10ac84;">40-60ms</span></div>
+            <div class="node-tag-item"><span>🇹🇼 中国台湾 Chunghwa 专线</span><span style="color:#10ac84;">25-40ms</span></div>
+            <div class="node-tag-item"><span>🇺🇸 美国硅谷/洛杉矶 GTT 专线</span><span style="color:#10ac84;">110-130ms</span></div>
+            <div class="node-tag-item"><span>🇬🇧 英国伦敦/德国法兰克福</span><span style="color:#10ac84;">140-160ms</span></div>
+          </div>
+        </div>
+
+        <!-- 客服支持 -->
+        <div class="info-card" style="background: #fdf2f8;">
+          <h2 class="info-card-title">
+            <span>🎧</span>
+            <span>7×24小时客服支持</span>
+          </h2>
+          <p>
+            我们构建了多维度的全天候技术保障体系：
+          </p>
+          <ul style="padding-left: 20px; margin-top: 10px;">
+            <li><strong>在线工单响应：</strong>技术团队实行 3 班轮换值守，平均工单解决响应时间控制在 15 分钟以内。</li>
+            <li><strong>故障自动容灾：</strong>主备通道秒级热切换机制，网络波动自动触发无感路由跳转。</li>
+            <li><strong>专属一对一支持：</strong>年付及以上用户享受专属技术顾问一对一配置支持与远程答疑。</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="https://ongkahheng0.flashleapaff.com/#?code=Wx6Ins9f" 
+             class="comic-btn" 
+             style="padding: 14px 32px; font-size: 17px;" 
+             rel="nofollow" 
+             target="_blank">
+            🚪 开启任意门 · 立即加入哆啦A梦
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="sitemap.html" class="footer-link" target="_blank">网站地图</a></li>
+        <li><a href="about.html" class="footer-link" target="_blank">关于我们</a></li>
+        <li><a href="terms.html" class="footer-link" target="_blank">服务条款</a></li>
+        <li><a href="privacy.html" class="footer-link" target="_blank">隐私政策</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 哆啦A梦. 专注于极速、自由与安全的无界互联体验.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

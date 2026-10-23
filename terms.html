@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服务条款 - 哆啦A梦网络加速器</title>
+  <style>
+    :root {
+      --doraemon-blue: #0096e6;
+      --bell-yellow: #ffd21e;
+      --collar-red: #ff4757;
+      --dark-line: #18191f;
+      --bg-cream: #faf7ee;
+      --border-thick: 3px solid var(--dark-line);
+      --border-medium: 2px solid var(--dark-line);
+      --shadow-solid: 4px 4px 0px var(--dark-line);
+      --shadow-solid-lg: 6px 6px 0px var(--dark-line);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg-cream);
+      background-image: radial-gradient(var(--dark-line) 0.75px, transparent 0.75px);
+      background-size: 20px 20px;
+      color: #18191f;
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    .site-nav {
+      background: #ffffff;
+      border-bottom: var(--border-thick);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--doraemon-blue);
+    }
+
+    .logo-bell {
+      width: 34px;
+      height: 34px;
+      background: var(--bell-yellow);
+      border: var(--border-medium);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 2px 2px 0px var(--dark-line);
+    }
+
+    .comic-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 800;
+      border: var(--border-thick);
+      border-radius: var(--radius-md);
+      background: var(--bell-yellow);
+      color: var(--dark-line);
+      box-shadow: var(--shadow-solid);
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .comic-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-solid-lg);
+    }
+
+    .page-main { padding: 50px 0 70px; }
+
+    .comic-box {
+      background: #ffffff;
+      border: var(--border-thick);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-solid-lg);
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: var(--border-thick);
+      padding-bottom: 16px;
+    }
+
+    .section-block {
+      margin-bottom: 30px;
+      border: var(--border-medium);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-solid);
+    }
+
+    .section-block.prohibited {
+      background: #fff5f5;
+      border-color: var(--collar-red);
+    }
+
+    .section-block.disclaimer {
+      background: #fffdf0;
+      border-color: var(--dark-line);
+    }
+
+    .block-heading {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rules-list {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 15px;
+    }
+
+    .site-footer {
+      background: #ffffff;
+      border-top: var(--border-thick);
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      list-style: none;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-link {
+      font-size: 15px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border: var(--border-medium);
+      border-radius: var(--radius-sm);
+      background: var(--bg-cream);
+      box-shadow: 2px 2px 0px var(--dark-line);
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: #666;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .comic-box { padding: 24px 18px; }
+      .page-title { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-nav">
+    <div class="container nav-wrap">
+      <a href="index.html" class="site-logo">
+        <div class="logo-bell">🔔</div>
+        <span>哆啦A梦</span>
+      </a>
+      <a href="https://ongkahheng0.flashleapaff.com/#?code=Wx6Ins9f" class="comic-btn" rel="nofollow" target="_blank">
+        🚀 立即注册
+      </a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <div class="comic-box">
+        <h1 class="page-title">
+          <span>📜</span>
+          <span>服务条款</span>
+        </h1>
+
+        <p style="margin-bottom: 24px; font-weight: 600; color: #555;">
+          欢迎使用哆啦A梦网络加速器服务。在您注册并使用本平台各项加速与代理服务前，请仔细阅读以下条款与规范。一旦您完成注册或开始使用本服务，即表示您已阅读、完全理解并同意遵守本服务条款的所有内容。
+        </p>
+
+        <!-- 禁止事项 -->
+        <div class="section-block prohibited">
+          <h2 class="block-heading" style="color: var(--collar-red);">
+            <span>🚫</span>
+            <span>严禁事项</span>
+          </h2>
+          <p style="margin-bottom: 12px; font-weight: 700;">
+            哆啦A梦网络加速器旨在为全球用户提供合法的科研、学习、跨国贸易、软件开发及影音娱乐网络中继服务。用户在使用过程中，严禁从事以下任何违法违规行为：
+          </p>
+          <ol class="rules-list">
+            <li><strong>违反法律法规：</strong>严禁利用本服务从事违反服务器所在地或国际通用互联网法律规范的任何活动。</li>
+            <li><strong>网络攻击与破坏：</strong>严禁利用本服务发起或协助发起 DDoS/DoS 攻击、端口暴力扫描、恶意漏洞渗透、特洛伊木马传播或僵尸网络操控。</li>
+            <li><strong>垃圾邮件与欺诈：</strong>严禁利用本代理服务发送大量未授权垃圾邮件、进行网络钓鱼、金融电信诈骗或非法虚假宣传。</li>
+            <li><strong>侵犯知识产权与非法分享：</strong>严禁利用本服务公开发布、传播盗版受保护知识产权软件、影视作品，严禁在公网节点使用 BT、BitTorrent、PT 等 P2P 下载软件挤占专线公网带宽。</li>
+            <li><strong>滥用与转售账号：</strong>严禁公开共享、非法出租、倒卖、转让您的个人订阅链接或将其用于公共抓取爬虫等恶性高消耗场景。</li>
+          </ol>
+          <p style="margin-top: 14px; font-size: 14px; color: #b71540; font-weight: 800;">
+            ⚠️ 违规处理机制：一经系统安全审计检测到上述异常高危攻击行为，我们有权在不事先通知的情况下，立即冻结或永久终止该账户服务，且不予办理退款，并保留依法配合向监管机构移交证据的权利。
+          </p>
+        </div>
+
+        <!-- 免责声明 -->
+        <div class="section-block disclaimer">
+          <h2 class="block-heading">
+            <span>🛡️</span>
+            <span>免责声明</span>
+          </h2>
+          <ol class="rules-list">
+            <li><strong>第三方内容免责：</strong>本服务仅作为纯粹的数据中继通道，不对用户通过本服务访问、下载、传输或浏览的任何第三方网站、应用、视频、文本或媒体内容的准确性、合法性、真实性或安全性承担任何法律责任。</li>
+            <li><strong>不可抗力与网络波动：</strong>由于国际海缆故障、区域电信运营商骨干故障、战争、自然灾害、政府行为或国家级防火墙政策调整等不可抗力导致的偶发性网络中断或延迟升高，本平台将尽最大努力抢修容灾，但不承担由此引发的直接或间接财产损失责任。</li>
+            <li><strong>第三方平台风控免责：</strong>部分第三方服务（如金融交易平台、流媒体、特定社交媒体）有其独立的安全风控规则与封禁策略，虽然我们提供纯净优质 IP 专线，但无法承诺永久避免第三方平台因其自身商业政策调整而采取的风控限制。</li>
+            <li><strong>条款变更权：</strong>哆啦A梦网络加速器保留根据运营与法律合规需要随时更新本条款的权利，修改后的条款一旦发布即行生效。</li>
+          </ol>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="https://ongkahheng0.flashleapaff.com/#?code=Wx6Ins9f" 
+             class="comic-btn" 
+             style="padding: 14px 32px; font-size: 17px;" 
+             rel="nofollow" 
+             target="_blank">
+            🤝 同意条款并前往注册
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="sitemap.html" class="footer-link" target="_blank">网站地图</a></li>
+        <li><a href="about.html" class="footer-link" target="_blank">关于我们</a></li>
+        <li><a href="terms.html" class="footer-link" target="_blank">服务条款</a></li>
+        <li><a href="privacy.html" class="footer-link" target="_blank">隐私政策</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 哆啦A梦. 专注于极速、自由与安全的无界互联体验.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
